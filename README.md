@@ -20,7 +20,7 @@
 在 Colab 選「GitHub」分頁貼上本 repo 網址，或直接開啟：
 
 ```
-https://colab.research.google.com/github/<帳號>/fju-im-agent-hw/blob/main/HW1-starter.ipynb
+https://colab.research.google.com/github/eddieli002/fju-im-agent-hw/blob/main/HW1-starter.ipynb
 ```
 
 開啟後請先「複製到雲端硬碟」，否則你的作答不會被保存。
