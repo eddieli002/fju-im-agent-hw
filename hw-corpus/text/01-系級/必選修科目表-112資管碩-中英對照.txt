@@ -1,0 +1,207 @@
+                                                  輔仁大學 112學年度 碩（博）士班 必選修科目表
+                                                    FJCU Required and Elective Course List for Master’s Program in Academic Year 112.
+                                 院別：管理學院                                                    系（所）別：資訊管理學系碩士班 組別：人工智慧學群
+                                   College: College of Management                   Department: Master’s Program in Information Management                   Group: Artificial Intelligence Track
+
+                                                                                                                   一年級               二年級               三年級               四年級            類別最 模組最
+                                                                                                        規定 1st Acadamic Year        2ed Acadamic      3rd Acadamic      4th Acadamic
+                                                                                                                                                                                        低應修 低應修
+ 類別 模組                           科 目 名 稱                                科目代碼                 選別                                         Year              Year              Year
+                                                                                                                                                                                        學分數 學分數
+                                                                                                                                                                                                                          備註
+ Category    Modules                   Compulsory                         Course code        Select     學分                                                                                                               Remark
+                                                                                                                                                                                        Minimum Minimum
+                                                                                                        Credits   上      下         上         下        上        下        上       下       credits for credits for
+                                                                                                                  Fall   Spring     Fall    Spring    Fall     Spring   Fall   Spring    category modules
+
+                       論文                                                  00041              必           6                                    6                                            6            6
+                       Thesis                                                               Required
+
+                       高等資料庫管理                                             07939              必           3       3
+                       Advanced Database Management                                         Required
+
+                       高等資訊管理                                              16910              必           3       3
+  必修課程                 Advanced Information Management                                      Required
+                                                                                                                                                                                            9            9
+   Required Courses    企業倫理                                                00292              必           2                2
+                       Reading in Business Ethics for Managers                              Required
+                       資訊管理講座                                              16654              必           1                          1
+                       Seminar on Information Management                                    Required
+
+                       巨量資料探勘                                                                 必                                                                                                                   至少取得3科學分
+                                                                           24501                          3       3
+               人       Big Data Mining                                                      Required                                                                                                              (5選3)
+                                                                                                                                                                                                                  Choose 3 from 5 courses
+               工       機器學習                                                13027              必           3       3
+必選課                    Machine Learning                                                     Required
+               智       人工智慧                                                                   必
+ 程                                                                         01016                          3                3                                                                9            9
+ Required      慧       Artificial Intelligence                                              Required
+  Courses
+               學       深度學習導論與應用Deep                                       32134              必           3                3
+                       Learning and its Applications                                        Required
+               群                                                           33034                          3       3
+                       物聯網概論與應用                                                               必
+                       Internet of Things                                                   Required
+
+                       資訊系統專案管理                                            11799              選           3       3
+                       Information System Project Management                                 elective
+
+                       電子商務總論                                              09290              必           3       3
+                       General Topics on Electronic Commerce                                Required
+
+                       網路行銷專題                                              23666              必           3       3
+                       Special Topics on Internet Marketing                                 Required
+
+                       金融科技與金融行銷                                           35555              必           3                3
+                       Financial Technology and Marketing                                   Required
+
+                       研究方法                                                01799              必           3                3
+                       Research Methodology                                                 Required
+
+                       電子採購與物流專題                                                              必           2                2
+                       Special Tops on Electronic Procurement and          23668
+                                                                                            Required
+                       Logistic
+                       軟體工程                                                03024              選           3                3
+                       Software Engineering                                                  elective
+  選修課程 使用者經驗設計                                                                                選
+  Elective Courses                                                         33856                          3                3
+                       User Experience Design                                                elective
+                       敏捷式軟體開發                                             32133              選           3       3
+                       Agile Software Development                                            elective
+                       資訊安全                                                04623              選           3       3
+                       Data Security                                                         elective
+                       服務科學專題                                              20229              選           3                3
+                       Special Topics on Service Science                                     elective
+                       知識管理                                                10849              選           3                3
+                       Knowledge Management                                                  elective
+                       全球運籌與供應鏈                                                               選                                                                                                                   全英授課EMI
+                                                                           35551                          3                3
+                       Global Logistics and Supply Chain                                     elective
+                       決策分析                                                                   選                                                                                                                   網路授課WEB
+                                                                           24103                          3       3
+                       Decision Analysis                                                     elective
+                       人工智慧產業實務                                            32135              選           3       3
+                       Industry Practices in Artificial Intelligence                         elective
+
+
+                                                                       必修學分數                                                                                                            畢業總學分數
+論文學分數A                                                                                                                                                                                  (含論文）Number
+                                                                       （不含論文）B                                              選修學分數C
+Number of Thesis       6                                               Number of            18                           Number of elective credits
+                                                                                                                                                      12                                of graduation credits     36
+credits                                                                Required credits                                                                                                 (including thesis)
+                                                                       (excluding thesis)                                                                                               A＋B＋C
+                                               輔仁大學 112學年度 碩（博）士班 必選修科目表
+                                               FJCU Required and Elective Course List for Master’s Program in Academic Year 112.
+
+                              院別：管理學院                                                 系（所）別：資訊管理學系碩士班 組別：電子商務學群
+                           College: College of Management                        Department: Master’s Program in Information Management                  Group: Electronic Commerce Track
+
+                                                                                                            一年級               二年級               三年級             四年級            類別最 模組最
+                                                                                                           1st Acadamic     2ed Acadamic       3rd Acadamic    4th Acadamic
+                                                                                             規定                                                                                低應修 低應修
+類別 模組                      科 目 名 稱                                科目代碼                選別                       Year             Year               Year            Year                                         備註
+Category   Modules               Compulsory                         Course code       Select 學分                                                                                學分數 學分數
+                                                                                                                                                                                                                Remark
+                                                                                                                                                                               Minimum Minimum
+                                                                                                 Credits   上       下        上         下        上       下       上       下       credits for credits for
+                                                                                                           Fall   Spring     Fall    Spring    Fall   Spring   Fall   Spring    category modules
+
+                     論文                                              00041              必          6                                    6                                          6            6
+                     Thesis                                                           Required
+
+                     高等資料庫管理                                         07939              必          3       3
+                     Advanced Database Management                                     Required
+
+                     高等資訊管理                                          16910              必          3       3
+                     Advanced Information Management                                  Required
+ 必修課程 企業倫理                                                                                                                                                                         9            9
+ Required Courses    Reading in Business Ethics for                  00292              必          2                2
+                                                                                      Required
+                     Managers
+
+                     資訊管理講座                                          16654              必          1                          1
+                     Seminar on Information Management                                Required
+
+           分組必修      電子商務總論                                                             必          3       3                                                                       3            3
+           Required General Topics on Electronic                     09290
+           Courses Commerce                                                           Required
+
+                     網路行銷專題                                          23666              必          3       3                                                                       8            8        至少取得3科學分
+                     Special Topics on Internet Marketing                             Required                                                                                                           (5選3)
+                                                                                                                                                                                                         Choose 3 from 5 courses
+                     金融科技與金融行銷                                       35555                         3                3
+                     Financial Technology and Marketing                                 必
+ 必選                                                                                   Required
+ 課程
+Required 分組必選        研究方法                                                               必          3                3
+ Courses Required Research Methodology                               01799
+         Courses                                                                      Required
+
+                     物聯網概論與應用                                        33034              必          3       3
+                     Internet of Things                                               Required
+
+                     電子採購與物流專題                                                                     2                2
+                     Special Tops on Electronic                      23668              必
+                     Procurement and Logistic                                         Required
+
+
+                     資訊系統專案管理                                                           選
+                     Information          System      Project        11799                         3       3
+                                                                                      elective
+                     Management
+                     巨量資料探勘                                          24501              必          3       3
+                     Big Data Mining                                                  Required
+
+                     機器學習                                            13027              必          3       3
+                     Machine Learning                                                 Required
+
+                     人工智慧                                            01016              必          3                3
+                     Artificial Intelligence                                          Required
+
+
+                     深度學習導論與應用                                       32134              必          3                3
+                     Deep Learning and its Applications                               Required
+
+
+                     軟體工程                                            03024              選          3                3
+                     Software Engineering                                             elective
+
+ 選修課程 使用者經驗設計                                                        33856              選          3                3
+      User Experience Design                                                          elective
+Elective Courses
+                     敏捷式軟體開發                                         32133              選          3       3
+                     Agile Software Development                                       elective
+
+                     資訊安全                                            04623              選          3       3
+                     Data Security                                                    elective
+
+                     服務科學專題                                          20229              選          3                3
+                     Special Topics on Service Science                                elective
+
+                     知識管理                                            10849              選          3                3
+                     Knowledge Management                                             elective
+
+                     全球運籌與供應鏈                                                           選                                                                                                                全英授課EMI
+                                                                     35551                         3                3
+                     Global Logistics and Supply Chain                                elective
+
+                     決策分析                                                               選                                                                                                                網路授課WEB
+                                                                     24103                         3       3
+                     Decision Analysis                                                elective
+
+                     人工智慧產業實務                                                           選
+                     Industry Practices        in   Artificial       32135                         3       3
+                                                                                      elective
+                     Intelligence
+
+                                                                 必修學分數                                                                                                         畢業總學分數
+論文學分數A                                                                                                                                                                         (含論文）Number
+                                                                 （不含論文）B                                              選修學分數C
+Number of            6                                           Number of            20                          Number of elective credits
+                                                                                                                                               10                              of graduation credits     36
+Thesis credits                                                   Required credits                                                                                              (including thesis)
+                                                                 (excluding thesis)                                                                                            A＋B＋C
+
