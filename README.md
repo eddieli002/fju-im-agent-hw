@@ -13,7 +13,7 @@
 | 週 | 日期 | 開放的檔案 | 狀態 |
 |---|---|---|---|
 | **W3** | 09-30 | `HW1/`、`hw-corpus/01-系級/` | ✅ **已開放** |
-| W5 | 10-14 | `HW2/`、`hw-corpus/02-院級/`、`HW1/HW1-solution.ipynb` | 未開放 |
+| W5 | 10-14 | `HW2/`、`hw-corpus/02-院級/` | ✅ **已開放** |
 | W7 | 10-28 | `HW3/`、`HW4/`、`hw-corpus/03-校級/`、`期中提案/` | 未開放 |
 | W10 | 11-18 | `HW6/` | 未開放 |
 | W11 | 11-25 | `HW5/` | 未開放 |
@@ -47,7 +47,6 @@ fju-im-agent-hw/
 |---|---|:--:|
 | `HW1/HW1-starter.ipynb` | HW1 起始 notebook（四個 TODO 程式挖空） | W3 |
 | `HW1/HW1-作答本.docx` | **HW1 的文字作答一律寫在這裡**，見下方說明 | W3 |
-| `HW1/HW1-solution.ipynb` | HW1 參考解答，同時是 HW2 要用的檢索器 | W5 |
 | `HW2/HW2-starter.ipynb` | HW2 起始 notebook | W5 |
 | `HW3/HW3-starter.ipynb` | HW3 起始 notebook（**會用到 Node／npm**） | W7 |
 | `HW4/HW4-starter.ipynb` | HW4 起始 notebook | W7 |

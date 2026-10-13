@@ -90,6 +90,19 @@
 
 ---
 
+## 02-院級（輔仁大學管理學院）
+
+院級法規**只有網頁、沒有 PDF**，故以 Markdown 純文字保存（已修剪網站導覽列，保留法規本文）。
+法規查詢入口：<https://www.management.fju.edu.tw/zh-tw/about/law.php?AID=9&LID=5>
+
+| 檔案 | 來源 |
+|---|---|
+| 管理學院-日間學制大學部及碩士班學生必選英語授課專業課程規定.md | `law-detail.php?AID=9&SID=10` |
+| 管理學院-大學部各系學生英文檢定畢業規定.md | `law-detail.php?AID=9&SID=9` |
+| 管理學院-大學部9學分產業實作課程開設細則.md | `law-detail.php?AID=9&SID=75` |
+
+---
+
 ## 未取得的兩份
 
 | 項目 | 原因 | 影響 |
