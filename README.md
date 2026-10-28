@@ -15,7 +15,8 @@
 | **W3** | 09-30 | `HW1/`、`hw-corpus/01-系級/` | ✅ **已開放** |
 | W5 | 10-14 | `HW2/`、`hw-corpus/02-院級/` | ✅ **已開放** |
 | W6 | 10-21 | `期中提案/` | ✅ **已開放** |
-| W7 | 10-28 | `HW3/`、`HW4/`、`hw-corpus/03-校級/` | 未開放 |
+| W7 | 10-28 | `HW3/`、`hw-corpus/03-校級/` | ✅ **已開放** |
+| W8 | 11-04 | `HW4/` | 未開放 |
 | W10 | 11-18 | `HW6/` | 未開放 |
 | W11 | 11-25 | `HW5/` | 未開放 |
 
@@ -50,7 +51,9 @@ fju-im-agent-hw/
 | `HW1/HW1-作答本.docx` | **HW1 的文字作答一律寫在這裡**，見下方說明 | W3 |
 | `HW2/HW2-starter.ipynb` | HW2 起始 notebook | W5 |
 | `HW3/HW3-starter.ipynb` | HW3 起始 notebook（**會用到 Node／npm**） | W7 |
-| `HW4/HW4-starter.ipynb` | HW4 起始 notebook | W7 |
+| `HW3/HW3-作答本.docx` | **HW3 的文字作答一律寫在這裡**，見下方說明 | W7 |
+| `HW3/HW3-Inspector操作說明.pdf` | HW3 任務一的操作手冊，46 頁，照著做 | W7 |
+| `HW4/HW4-starter.ipynb` | HW4 起始 notebook | W8 |
 | `HW5/HW5-starter.ipynb` | HW5 起始 notebook（**需要 GPU**） | W11 |
 | `HW6/HW6-作業說明.md` | HW6 作業說明（文獻報告與架構修訂，**不寫程式**） | W10 |
 | `HW6/HW6-指定閱讀清單.md` | HW6 指定閱讀池十篇的書目與取得連結 | W10 |
