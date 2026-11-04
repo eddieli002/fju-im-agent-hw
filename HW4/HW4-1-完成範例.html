@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HW4 完成範例</title>
+<style>
+  :root{--ink:#22252a;--mute:#6b7280;--line:#d8dde3;--bg:#fff;--box:#f6f8fa;
+        --accent:#1f6fb2;--warn:#fdf3e7;--warnline:#e0a458;--code:#8a3b2a;}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ink:#e6e8ea;--mute:#9aa3ad;--line:#333a44;--bg:#16181c;--box:#1e2127;
+    --accent:#7fb4e0;--warn:#2b2418;--warnline:#8a6a3a;--code:#e0a07f;}}
+  :root[data-theme="dark"]{--ink:#e6e8ea;--mute:#9aa3ad;--line:#333a44;
+    --bg:#16181c;--box:#1e2127;--accent:#7fb4e0;--warn:#2b2418;
+    --warnline:#8a6a3a;--code:#e0a07f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;
+       font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",
+                   system-ui,sans-serif;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 16px 80px}
+  nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);
+      padding:12px 0;margin-bottom:28px;font-size:.85rem;z-index:5}
+  nav a{color:var(--accent);text-decoration:none;margin-right:16px;
+        white-space:nowrap}
+  nav a:hover{text-decoration:underline}
+  h1{font-size:1.7rem;margin:34px 0 8px;letter-spacing:.01em}
+  h1:first-of-type{margin-top:28px}
+  h2{font-size:1.28rem;margin:40px 0 12px;padding-top:18px;
+     border-top:1px solid var(--line)}
+  h3{font-size:1.08rem;margin:30px 0 8px;color:var(--accent)}
+  h4{font-size:.98rem;margin:24px 0 6px;color:var(--mute)}
+  p{margin:10px 0}
+  blockquote{background:var(--warn);border:1px solid var(--warnline);
+             border-radius:10px;padding:4px 20px;margin:20px 0}
+  blockquote h3{margin:14px 0 8px;color:var(--ink);font-size:1rem}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem}
+  th,td{border:1px solid var(--line);padding:9px 12px;vertical-align:top;
+        text-align:left}
+  thead th{background:var(--box);font-weight:700}
+  code{background:var(--box);padding:1px 5px;border-radius:4px;
+       font-size:.88em;color:var(--code);
+       font-family:"Cascadia Mono",Consolas,"Courier New",monospace}
+  pre{background:var(--box);border:1px solid var(--line);border-radius:8px;
+      padding:14px 16px;overflow-x:auto;margin:14px 0}
+  pre code{background:none;padding:0;color:var(--ink);font-size:.86rem;
+           line-height:1.6}
+  ul,ol{margin:10px 0;padding-left:1.6em}
+  li{margin:4px 0}
+  ul.task-list{list-style:none;padding-left:.2em}
+  ul.task-list li{margin:6px 0}
+  ul.task-list input{margin-right:8px}
+  hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+  strong{font-weight:700}
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);
+         color:var(--mute);font-size:.86rem}
+</style></head>
+<body><div class="wrap">
+<nav><a href="#p1">① 成品</a><a href="#p2">② 全文</a><a href="#p3">③ 程式讀出來的</a><a href="#p4">④ 觸發判定</a></nav>
+<h1 id="hw4-完成範例">HW4 完成範例</h1>
+<p>這一頁把<strong>一份做完的 skill</strong> 從頭到尾攤開給你看：資料夾長什麼樣、 兩個檔案的全文、程式讀出來是什麼、體積幾個 token、觸發判定印出什麼。</p>
+<p><strong>先看這一頁，再去看「HW4 操作說明」動手。</strong></p>
+<table>
+<tbody>
+<tr>
+<td>這一頁的主題</td>
+<td><code>course-deadline</code>（課程作業死線查詢）——<strong>與你要做的三個情境都不同</strong></td>
+</tr>
+<tr>
+<td>你要照抄的</td>
+<td>結構：兩個檔、四個 <code>##</code> 區塊、frontmatter 兩行</td>
+</tr>
+<tr>
+<td>你<strong>不能</strong>照抄的</td>
+<td>內容。沒有一個情境是查詢類的</td>
+</tr>
+<tr>
+<td>怎麼動手</td>
+<td>看「HW4 操作說明」的步驟 1 到 6</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a id="p1"></a></p>
+<h2 id="①-成品長什麼樣">① 成品長什麼樣</h2>
+<p>這一份的主題是<strong>查詢課程作業的死線</strong>。<code>course-deadline</code> 這個 skill 做的事是： 使用者問作業什麼時候交，它依週次對照表回答截止日與繳交方式。</p>
+<blockquote>
+<p><strong>注意</strong>：這個主題與你要做的三個情境（A 簡報大綱／B 文獻筆記／C 報告格式檢查） <strong>都不一樣</strong>。這一頁給你看的是「結構」，不是可以照抄的內容。</p>
+</blockquote>
+<p>資料夾長這樣——就這兩個檔，不多不少：</p>
+<pre><code>course-deadline/
+├── SKILL.md
+└── references/
+    └── schedule.md</code></pre>
+<table>
+<tbody>
+<tr>
+<td>資料夾名稱</td>
+<td><code>course-deadline</code>——必須與 <code>SKILL.md</code> 裡的 <code>name</code> 完全相同</td>
+</tr>
+<tr>
+<td><code>SKILL.md</code></td>
+<td><code>SKILL</code> 五個字母<strong>全大寫</strong>，<code>.md</code> 全小寫</td>
+</tr>
+<tr>
+<td><code>references/</code></td>
+<td>資料夾名稱全小寫，底下放 1 個 <code>.md</code></td>
+</tr>
+<tr>
+<td>全部行數</td>
+<td><code>SKILL.md</code> 27 行（上限 40）、<code>schedule.md</code> 12 行（上限 20）</td>
+</tr>
+</tbody>
+</table>
+<p><a id="p2"></a></p>
+<h2 id="②-兩個檔案的全文">② 兩個檔案的全文</h2>
+<h3 id="skillmd"><code>SKILL.md</code></h3>
+<p>四個 <code>##</code> 區塊的順序是固定的：<code>## 何時載入 references</code>、<code>## 執行原則</code>、<code>## 邊界條件</code>、<code>## 完成條件</code>。 <code>---</code> 包起來的那一段就是 <strong>frontmatter</strong>，它之後的全部內容是 <strong>body</strong>。</p>
+<pre class="markdown"><code>---
+name: course-deadline
+description: 回答這門課的作業繳交時間與當週要交什麼，依週次對照表查出對應的作業名稱、截止日與繳交方式。當使用者問作業什麼時候交、下週要交什麼或某一份作業的死線時使用。
+---
+
+# Course Deadline
+
+## 何時載入 references
+
+- 任何涉及具體日期或週次的問題，都要先讀取 `references/schedule.md`，不得憑記憶回答
+- 只問繳交方式這類不涉及日期的問題，依下方原則回答即可
+
+## 執行原則
+
+1. 先確認使用者問的是哪一份作業或哪一週，問法含糊時先反問
+2. 回答一律附上該作業的截止日與繳交方式兩項
+3. 同一週有多份作業時全部列出，依截止日先後排序
+4. 日期寫成完整格式（例：11/18（二）23:59），不使用「下週」這種相對說法
+
+## 邊界條件
+
+- 對照表沒有收錄的作業，說明查不到，不得推測日期
+
+## 完成條件
+
+- [ ] 回答裡出現具體日期
+- [ ] 已說明繳交方式</code></pre>
+<h3 id="referencesschedulemd"><code>references/schedule.md</code></h3>
+<pre class="markdown"><code># 115-1 作業繳交對照表
+
+| 作業 | 出題 | 截止 | 繳交方式 |
+|---|---|---|---|
+| HW1 | W3（09-30） | W5（10-14）23:59 | TronClass |
+| HW2 | W5（10-14） | W7（10-28）23:59 | TronClass |
+| 期中提案（書面） | W6（10-21） | 11/09（一）23:59 | TronClass |
+| 期中提案（發表） | — | W9（11-11）課堂 | 課堂報告 |
+| HW3 | W7（10-28） | W10（11-18）23:59 | TronClass |
+| HW4 | W8（11-04） | W10（11-18）23:59 | TronClass |
+| HW6 | W10（11-18） | W13（12-09）課堂 | 課堂報告 |
+| HW5 | W11（11-25） | W13（12-09）23:59 | TronClass |</code></pre>
+<p><a id="p3"></a></p>
+<h2 id="③-程式讀出來的">③ 程式讀出來的</h2>
+<h3 id="frontmatter-兩行notebook-第-2-格">frontmatter 兩行（notebook 第 2 格）</h3>
+<p>你在 <code>SKILL.md</code> 裡手打的那兩行，被 YAML 解析器讀過一次之後是這樣：</p>
+<pre><code>name
+    course-deadline
+
+description（77 字）
+    回答這門課的作業繳交時間與當週要交什麼，依週次對照表查出對應的作業名稱、截止日與繳交方式。當使用者問作業什麼時候交、下週要交什麼或某一份作業的死線時使用。</code></pre>
+<p><code>name</code> 與資料夾名稱相同，<code>description</code> 77 字，在 120 字上限內。 <strong>這一頁的兩行與上面 <code>SKILL.md</code> 裡的那兩行一字不差</strong>——你那一份也應該是這樣。</p>
+<h3 id="體積notebook-第-5-格">體積（notebook 第 5 格）</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>token</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只有 <code>SKILL.md</code></td>
+<td><strong>308</strong></td>
+</tr>
+<tr>
+<td><code>SKILL.md</code> ＋ references</td>
+<td><strong>623</strong></td>
+</tr>
+<tr>
+<td>差</td>
+<td><strong>2.0 倍</strong></td>
+</tr>
+</tbody>
+</table>
+<p>同一格還會跟一份真實的 skill 對照：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>references 份數</th>
+<th>只有 <code>SKILL.md</code></th>
+<th>＋references</th>
+<th>倍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>research-paper-writing</code>（MIT）</td>
+<td>37</td>
+<td>983</td>
+<td>21,643</td>
+<td><strong>22.0</strong></td>
+</tr>
+<tr>
+<td>這一份</td>
+<td>1</td>
+<td>308</td>
+<td>623</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>倍數差這麼多，差的是 <strong>references 的份數</strong>，不是模型、也不是檔案格式—— 兩邊是在同一個 notebook 裡用同一個 tokenizer 量的，兩邊的檔案都是 <code>.md</code>。</p>
+</blockquote>
+<p><a id="p4"></a></p>
+<h2 id="④-觸發判定notebook-第-7-格">④ 觸發判定（notebook 第 7 格）</h2>
+<p>候選清單裡一共 <strong>4 個</strong> skill：你自己那一份，加上三個課程固定的乾擾項。</p>
+<p>模型只讀得到每一個 skill 的 <code>name</code> 與 <code>description</code> 這兩行， <strong>讀不到 <code>SKILL.md</code> 底下的任何一節</strong>。所以你自己寫的那 1–2 條執行原則， 不會影響這次判定的結果。</p>
+<pre><code>==============================================================
+候選清單（4 個）
+  - course-deadline
+      回答這門課的作業繳交時間與當週要交什麼，依週次對照表查出對應的作業名稱、截止日與繳交方式。當使用者問作業什麼時候交、下週要交什麼或某一份作業……
+  - session-report
+      Generate an explorable HTML report of Claude Code session usage (token……
+  - skill-development
+      This skill should be used when the user wants to &quot;create a skill&quot;, &quot;ad……
+  - build-mcp-server
+      This skill should be used when the user asks to &quot;build an MCP server&quot;,……
+
+問句　下週要交什麼？
+==============================================================
+
+模型選了　　course-deadline
+你的 skill　course-deadline
+一樣嗎　　　一樣</code></pre>
+<blockquote>
+<p>最後還會印一行「模型的原始回答」。那一行的逐字內容每次執行可能略有不同，所以這一頁不列——<strong>你那一格印出什麼，就照實貼什麼進作答本。</strong></p>
+</blockquote>
+<h3 id="這個結果是實測的">這個結果是實測的</h3>
+<table>
+<thead>
+<tr>
+<th>時間</th>
+<th>環境</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-01</td>
+<td>Colab　Tesla T4</td>
+<td>三個情境各 5 句 ＋ 本範例 1 句，共 16 句，<strong>16/16 都選中目標 skill</strong></td>
+</tr>
+</tbody>
+</table>
+<p>模型是 <code>Qwen/Qwen2.5-3B-Instruct</code>，greedy 解碼（<code>do_sample=False</code>）。</p>
+<blockquote>
+<p>照操作說明做完，這一格<strong>預期會選中你自己那一份</strong>。 真的選了別的、或回 <code>none</code>——<strong>照實寫下來就好，不扣分。</strong></p>
+</blockquote>
+
+<footer>HW4 完成範例　｜　本檔由 <code>產生範例頁.py</code> 自 <code>填答區.py</code> 與 <code>完成範例/</code> 產生，請勿直接編輯。</footer>
+</div></body></html>

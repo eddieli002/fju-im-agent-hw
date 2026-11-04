@@ -16,7 +16,7 @@
 | W5 | 10-14 | `HW2/`、`hw-corpus/02-院級/` | ✅ **已開放** |
 | W6 | 10-21 | `期中提案/` | ✅ **已開放** |
 | W7 | 10-28 | `HW3/`、`hw-corpus/03-校級/` | ✅ **已開放** |
-| W8 | 11-04 | `HW4/` | 未開放 |
+| W8 | 11-04 | `HW4/` | ✅ **已開放** |
 | W10 | 11-18 | `HW6/` | 未開放 |
 | W11 | 11-25 | `HW5/` | 未開放 |
 
@@ -50,13 +50,20 @@ fju-im-agent-hw/
 | `HW1/HW1-starter.ipynb` | HW1 起始 notebook（四個 TODO 程式挖空） | W3 |
 | `HW1/HW1-作答本.docx` | **HW1 的文字作答一律寫在這裡**，見下方說明 | W3 |
 | `HW2/HW2-starter.ipynb` | HW2 起始 notebook | W5 |
+| `HW2/HW2-作答本.docx` | **HW2 的文字作答一律寫在這裡**，見下方說明 | W5 |
 | `HW3/HW3-starter.ipynb` | HW3 起始 notebook（**會用到 Node／npm**） | W7 |
 | `HW3/HW3-作答本.docx` | **HW3 的文字作答一律寫在這裡**，見下方說明 | W7 |
 | `HW3/HW3-Inspector操作說明.pdf` | HW3 任務一的操作手冊，46 頁，照著做 | W7 |
-| `HW4/HW4-starter.ipynb` | HW4 起始 notebook | W8 |
+| `HW4/HW4-starter.ipynb` | HW4 起始 notebook（**任務二需要 GPU**） | W8 |
+| `HW4/HW4-作答本.docx` | **HW4 的文字作答一律寫在這裡**，見下方說明 | W8 |
+| `HW4/HW4-1-完成範例.html` | **先看這份**：做完長什麼樣，成品全文與跑出來的結果（另有 `.md` 版） | W8 |
+| `HW4/HW4-2-操作說明.html` | **再看這份**：任務一的操作步驟，照著做（另有 `.md` 版） | W8 |
 | `HW5/HW5-starter.ipynb` | HW5 起始 notebook（**需要 GPU**） | W11 |
 | `HW6/HW6-作業說明.md` | HW6 作業說明（文獻報告與架構修訂，**不寫程式**） | W10 |
 | `HW6/HW6-指定閱讀清單.md` | HW6 指定閱讀池十篇的書目與取得連結 | W10 |
+
+> **HW4 的兩份 `.html` 在 GitHub 上點開會看到原始碼——下載後用瀏覽器開啟。**
+> 不想下載的話，同內容的 `.md` 版在 GitHub 上可以直接讀。
 
 ### 期中提案（11/11 發表）
 
@@ -116,6 +123,13 @@ https://colab.research.google.com/github/eddieli002/fju-im-agent-hw/blob/main/HW
 **HW1 需要 GPU**：執行階段 → 變更執行階段類型 → T4 GPU。
 
 **HW3 會用到 Node／npm**（Colab 已內建，不用自己裝）。第一格會花一兩分鐘下載套件，這是正常的。
+
+**HW3 任務二需要 GPU**：執行階段 → 變更執行階段類型 → **T4 GPU**，
+否則載入模型那一格會很慢或直接失敗。任務二不需要任何 API 金鑰。
+
+**HW4 任務二需要 GPU**：前五格用預設的 CPU 就能跑，把檔案弄對（第 3 格全部通過）
+之後再換 **T4 GPU** 跑第 6、7 格。**換執行階段會清掉上傳的檔案，要從第 1 格重跑。**
+同樣不需要任何 API 金鑰。
 
 **HW5 需要 GPU，且要下載一份 15.2 GB 的模型權重**，依網速約 9–15 分鐘，這是正常的。
 **盡量一次做完**——Colab 關掉再開，權重要重新下載一次。

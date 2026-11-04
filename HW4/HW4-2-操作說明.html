@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HW4 操作說明</title>
+<style>
+  :root{--ink:#22252a;--mute:#6b7280;--line:#d8dde3;--bg:#fff;--box:#f6f8fa;
+        --accent:#1f6fb2;--warn:#fdf3e7;--warnline:#e0a458;--code:#8a3b2a;}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ink:#e6e8ea;--mute:#9aa3ad;--line:#333a44;--bg:#16181c;--box:#1e2127;
+    --accent:#7fb4e0;--warn:#2b2418;--warnline:#8a6a3a;--code:#e0a07f;}}
+  :root[data-theme="dark"]{--ink:#e6e8ea;--mute:#9aa3ad;--line:#333a44;
+    --bg:#16181c;--box:#1e2127;--accent:#7fb4e0;--warn:#2b2418;
+    --warnline:#8a6a3a;--code:#e0a07f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;
+       font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",
+                   system-ui,sans-serif;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 16px 80px}
+  nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);
+      padding:12px 0;margin-bottom:28px;font-size:.85rem;z-index:5}
+  nav a{color:var(--accent);text-decoration:none;margin-right:16px;
+        white-space:nowrap}
+  nav a:hover{text-decoration:underline}
+  h1{font-size:1.7rem;margin:34px 0 8px;letter-spacing:.01em}
+  h1:first-of-type{margin-top:28px}
+  h2{font-size:1.28rem;margin:40px 0 12px;padding-top:18px;
+     border-top:1px solid var(--line)}
+  h3{font-size:1.08rem;margin:30px 0 8px;color:var(--accent)}
+  h4{font-size:.98rem;margin:24px 0 6px;color:var(--mute)}
+  p{margin:10px 0}
+  blockquote{background:var(--warn);border:1px solid var(--warnline);
+             border-radius:10px;padding:4px 20px;margin:20px 0}
+  blockquote h3{margin:14px 0 8px;color:var(--ink);font-size:1rem}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem}
+  th,td{border:1px solid var(--line);padding:9px 12px;vertical-align:top;
+        text-align:left}
+  thead th{background:var(--box);font-weight:700}
+  code{background:var(--box);padding:1px 5px;border-radius:4px;
+       font-size:.88em;color:var(--code);
+       font-family:"Cascadia Mono",Consolas,"Courier New",monospace}
+  pre{background:var(--box);border:1px solid var(--line);border-radius:8px;
+      padding:14px 16px;overflow-x:auto;margin:14px 0}
+  pre code{background:none;padding:0;color:var(--ink);font-size:.86rem;
+           line-height:1.6}
+  ul,ol{margin:10px 0;padding-left:1.6em}
+  li{margin:4px 0}
+  ul.task-list{list-style:none;padding-left:.2em}
+  ul.task-list li{margin:6px 0}
+  ul.task-list input{margin-right:8px}
+  hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+  strong{font-weight:700}
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);
+         color:var(--mute);font-size:.86rem}
+</style></head>
+<body><div class="wrap">
+<nav><a href="#sec1">一、題目說明</a><a href="#sec2">二、操作指引</a></nav>
+<h1 id="hw4-操作說明">HW4 操作說明</h1>
+<p><strong>在你自己的電腦上做出一個 Agent Skill，再到 Colab 測它會不會被觸發。</strong></p>
+<blockquote>
+<h3 id="這份說明有兩種格式內容完全一樣">這份說明有兩種格式，內容完全一樣</h3>
+<table>
+<thead>
+<tr>
+<th>檔案</th>
+<th>怎麼用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HW4-2-操作說明.md</code></td>
+<td>在 GitHub 上直接讀。程式碼區塊右上角有複製鈕，<strong>要貼的內容從這裡複製最快</strong></td>
+</tr>
+<tr>
+<td><code>HW4-2-操作說明.html</code></td>
+<td>版面比較好讀。<strong>在 GitHub 上點開會看到一堆原始碼，那是正常的</strong>——按右上角下載，存到電腦上再用瀏覽器打開</td>
+</tr>
+</tbody>
+</table>
+<p>兩份都看或只看一份都可以，不影響作業。</p>
+</blockquote>
+<p><a id="sec1"></a></p>
+<hr />
+<h1 id="一題目說明">一、題目說明</h1>
+<h2 id="任務一-在你自己的電腦上做出一個-skill">任務一　在你自己的電腦上做出一個 skill</h2>
+<h3 id="要交出什麼">要交出什麼</h3>
+<p>你電腦上一個真實存在的資料夾，裡面兩個檔案：</p>
+<pre><code>&lt;你選的 skill 名稱&gt;/
+├── SKILL.md              ← 檔名不可以改
+└── references/           ← 資料夾名稱不可以改
+    └── &lt;一份 .md&gt;</code></pre>
+<p>建好之後把檔案總管的畫面截圖，貼進作答本第 2 題。 任務二會把這個資料夾搬到 Colab 上去測。</p>
+<h3 id="主題三選一選定之後不換">主題三選一，選定之後不換</h3>
+<p>任務二會用一組固定的問句去測你的 skill 會不會被選中，那些問句問的就是 你選的那個主題。換了主題，那些問句就對不上你那一份了。</p>
+<h3 id="這份-skill-你要自己寫的只有-12-條">這份 skill 你要自己寫的只有 1–2 條</h3>
+<p><code>SKILL.md</code> 除了「執行原則」的第 3、4 行，<strong>其餘整份照操作說明貼上</strong>， <code>references/</code> 那一份也是整份貼上。</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>誰寫</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code>、<code>description</code></td>
+<td>照抄</td>
+</tr>
+<tr>
+<td><code>## 何時載入 references</code></td>
+<td>照抄</td>
+</tr>
+<tr>
+<td><code>## 執行原則</code> 第 1、2 條</td>
+<td>照抄</td>
+</tr>
+<tr>
+<td><strong><code>## 執行原則</code> 第 3 條</strong></td>
+<td><strong>你自己寫</strong>（必填）</td>
+</tr>
+<tr>
+<td><strong><code>## 執行原則</code> 第 4 條</strong></td>
+<td><strong>你自己寫</strong>（選填，不寫就把整行刪掉）</td>
+</tr>
+<tr>
+<td><code>## 邊界條件</code></td>
+<td>照抄</td>
+</tr>
+<tr>
+<td><code>## 完成條件</code></td>
+<td>照抄</td>
+</tr>
+<tr>
+<td><code>references/</code> 那一份</td>
+<td>照抄</td>
+</tr>
+</tbody>
+</table>
+<h3 id="你交出來的-skill-要符合這幾條">你交出來的 skill 要符合這幾條</h3>
+<pre><code>[ ] 剛好 2 個檔案：SKILL.md ＋ references/ 底下 1 份。不可以更多
+[ ] SKILL.md 裡剛好 4 個 ## 區塊，標題與順序照操作說明那一份
+[ ] 「何時載入 references」底下那一句要指名 references/ 裡的檔名（照抄就有）
+[ ] 執行原則共 3 或 4 條（照抄 2 條 ＋ 你自己寫 1 或 2 條）
+[ ] 你自己寫的每一條 40 字以內
+[ ] 整份 SKILL.md 40 行以內
+[ ] references/ 那一份 20 行以內</code></pre>
+<p>notebook 的第 3 格會把這幾項逐條印出來告訴你有沒有過。沒過就回來改，改到過了再往下做。</p>
+<blockquote>
+<p>第 3 格還會多印一條「SKILL.md 的 token 數」。<strong>那一條是告知，不是規定</strong>—— 照上面的結構做就不可能超過，列出來只是讓你看到自己這份有多大，第 4 題會用到。</p>
+</blockquote>
+<p>這份作業量的是「用到才載入」省下多少。一份寫到幾千字的 SKILL.md 會讓 作答本第 4 題的對照算不出東西來。</p>
+<h3 id="作答本第-2-題要你申報那-12-條是誰寫的">作答本第 2 題要你申報那 1–2 條是誰寫的</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>勾一個</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>那 1–2 條是我自己寫的，沒有用 AI</td>
+</tr>
+<tr>
+<td>②</td>
+<td>那 1–2 條用了 AI 協助　→　<strong>附上與 AI 的互動紀錄</strong>（對話截圖或匯出的文字檔，附檔，不計篇幅）</td>
+</tr>
+</tbody>
+</table>
+<p>兩個選項都不影響分數。沒有勾選的視為①；若自行撰寫的那幾條明顯超出規定篇幅，會退回補件。</p>
+<h3 id="這一題不做的事">這一題不做的事</h3>
+<ul>
+<li><strong>不把 skill 裝進 Claude Code 或任何工具去跑。</strong> 這次只看它會不會被選中， 不看它裡面的步驟能不能真的執行</li>
+<li><strong>不需要任何 API 金鑰或付費帳號</strong></li>
+</ul>
+<h2 id="三個情境挑一個">三個情境，挑一個</h2>
+<p><strong>挑定之後就不要換。</strong> 任務二會用一組固定的問句去測你的 skill 會不會被 選中，那些問句問的就是你選的那個主題；換了主題，問句就對不上了。</p>
+<table>
+<thead>
+<tr>
+<th>代號</th>
+<th>主題</th>
+<th>skill 名稱（＝資料夾名稱）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>簡報大綱生成</td>
+<td><code>slide-outline</code></td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>文獻筆記整理</td>
+<td><code>lit-note</code></td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>報告格式檢查</td>
+<td><code>format-check</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="情境-a-簡報大綱生成">情境 A　簡報大綱生成</h3>
+<p>它要做的事：使用者給它一份報告或研究內容，它要回一份簡報大綱。</p>
+<p>它的輸出要有：</p>
+<ul>
+<li>建議做幾頁</li>
+<li>每一頁的標題與重點</li>
+<li>分得出兩種長度——5 分鐘的簡報和 20 分鐘的簡報，頁數不一樣</li>
+</ul>
+<p><code>references/</code> 那一份放：頁面設計建議（標題怎麼下、圖表怎麼配、每頁字量）（檔名 <code>page-design.md</code>）</p>
+<h3 id="情境-b-文獻筆記整理">情境 B　文獻筆記整理</h3>
+<p>它要做的事：使用者給它一篇或幾篇文獻，它要回固定格式的閱讀筆記。</p>
+<p>它的輸出要有：</p>
+<ul>
+<li>每一篇各自成一組</li>
+<li>每一組固定四欄：研究問題／方法／發現／限制</li>
+<li>找不到的欄位要寫「未提及」，不可以留空也不可以自己補</li>
+</ul>
+<p><code>references/</code> 那一份放：四欄各自要寫到什麼程度、引述原文怎麼標出處（檔名 <code>note-format.md</code>）</p>
+<h3 id="情境-c-報告格式檢查">情境 C　報告格式檢查</h3>
+<p>它要做的事：使用者給它一份報告，它要依 APA 第七版逐項回報哪裡格式不符合。</p>
+<p>它的輸出要有：</p>
+<ul>
+<li>檢查三個面向：引用格式／標題層級／圖表標號</li>
+<li>每一個不符合的地方都要附「原文怎麼寫」與「該怎麼改」</li>
+<li>規範沒有涵蓋的項目要說無從判定，不可以自己補一條規則</li>
+</ul>
+<p><code>references/</code> 那一份放：APA 第七版三種常見條目格式，與最常見的三個錯誤（檔名 <code>apa-basics.md</code>）</p>
+<p><a id="sec2"></a></p>
+<hr />
+<h1 id="二操作指引">二、操作指引</h1>
+<h2 id="怎麼建">怎麼建</h2>
+<p><strong>可以複製貼上，不必逐字打。</strong> 重點是資料夾與檔案是你自己建出來的。</p>
+<h3 id="步驟-1-建資料夾">步驟 1　建資料夾</h3>
+<p>在任何你找得到的地方（例如桌面）建一個資料夾，名稱用你選的情境的 skill 名稱。</p>
+<h3 id="步驟-2-在它裡面再建一個資料夾命名-references">步驟 2　在它裡面再建一個資料夾，命名 <code>references</code></h3>
+<p>建好之後結構是這樣：</p>
+<pre><code>&lt;skill 名稱&gt;/
+├── SKILL.md
+└── references/
+    └── &lt;一份 .md&gt;</code></pre>
+<h3 id="步驟-3-建-skillmd">步驟 3　建 <code>SKILL.md</code></h3>
+<p>用<strong>純文字編輯器</strong>開新檔，把下面的內容貼進去，存成 <code>SKILL.md</code>， 放在最外層那個資料夾底下。</p>
+<blockquote>
+<p>純文字編輯器就是不會偷偷加格式的那種。Windows 的「記事本」、 macOS 的「文字編輯」、VS Code 都算。<strong>不要用 Word</strong>—— 它存出來的不是純文字。</p>
+</blockquote>
+<p>⚠ 檔名必須剛好是 <code>SKILL.md</code>——<strong><code>SKILL</code> 全大寫、<code>.md</code> 全小寫</strong>。 寫成 <code>skill.md</code> 或 <code>Skill.md</code> 會認不出來。</p>
+<p>⚠ <strong>存檔時要確認副檔名沒有被改掉。</strong> 用記事本的話，「存檔類型」要選「<strong>所有檔案</strong>」，否則會存成 <code>SKILL.md.txt</code>； 用 macOS 的「文字編輯」要先在「格式」選「<strong>製作純文字</strong>」。</p>
+<h4 id="情境-a簡報大綱生成-存成-skillmd">情境 A（簡報大綱生成）　存成 <code>SKILL.md</code></h4>
+<pre class="markdown"><code>---
+name: slide-outline
+description: 把報告或研究內容整理成簡報大綱，支援不同長度的簡報（例如 5 分鐘或 20 分鐘），列出建議頁數與每頁重點。當使用者要把內容整理成簡報大綱或安排投影片架構時使用。
+---
+
+# Slide Outline
+
+## 何時載入 references
+
+- 若使用者要更詳細的頁面設計建議（標題怎麼下、圖表怎麼配），讀取 `references/page-design.md`
+- 一般整理大綱不需要載入，依下方原則處理即可
+
+## 執行原則
+
+1. 先確認簡報長度：5 分鐘還是 20 分鐘
+2. 5 分鐘簡報建議 5–7 頁，20 分鐘簡報建議 15–20 頁
+3. 【換成你自己寫的一條，40 字以內】
+4. 【這一行選填；不寫就整行刪掉】
+
+## 邊界條件
+
+- 使用者沒有說明簡報長度時，不得自行假設，要先詢問
+
+## 完成條件
+
+- [ ] 已列出每一頁的標題與重點
+- [ ] 頁數落在建議範圍內（或已說明為什麼不在範圍內）</code></pre>
+<h4 id="情境-b文獻筆記整理-存成-skillmd">情境 B（文獻筆記整理）　存成 <code>SKILL.md</code></h4>
+<pre class="markdown"><code>---
+name: lit-note
+description: 把一篇或多篇文獻整理成固定格式的筆記，每一篇輸出研究問題、方法、發現、限制四個欄位。當使用者要整理文獻筆記、做論文閱讀紀錄或比較幾篇文獻時使用。
+---
+
+# Lit Note
+
+## 何時載入 references
+
+- 若使用者問某一個欄位該寫到什麼程度，或要求標註出處，讀取 `references/note-format.md`
+- 一般整理筆記不需要載入，依下方原則處理即可
+
+## 執行原則
+
+1. 每一篇文獻各自成一組，四欄固定依「研究問題／方法／發現／限制」的順序輸出
+2. 每一欄用一到三句話，直接引述原文時要標出處
+3. 【換成你自己寫的一條，40 字以內】
+4. 【這一行選填；不寫就整行刪掉】
+
+## 邊界條件
+
+- 原文不足以判斷某一欄時，該欄填「未提及」，不得用常識或其他文獻的內容補上
+
+## 完成條件
+
+- [ ] 每一篇都有完整的四個欄位
+- [ ] 沒有任何欄位是空白的（找不到就寫「未提及」）</code></pre>
+<h4 id="情境-c報告格式檢查-存成-skillmd">情境 C（報告格式檢查）　存成 <code>SKILL.md</code></h4>
+<pre class="markdown"><code>---
+name: format-check
+description: 依 APA 第七版檢查一份報告，逐項回報引用格式、標題層級、圖表標號三個面向哪裡不符合。當使用者要檢查報告格式、核對引用寫法或確認排版是否符合規定時使用。
+---
+
+# Format Check
+
+## 何時載入 references
+
+- 若使用者問某一種條目的正確寫法，或要核對引用格式，讀取 `references/apa-basics.md`
+- 只檢查標題層級與圖表標號時不需要載入，依下方原則處理即可
+
+## 執行原則
+
+1. 一律依 APA 第七版檢查，不得改用其他規範或自創規則
+2. 引用格式／標題層級／圖表標號三個面向逐項回報，每項附「原文怎麼寫」與「該怎麼改」
+3. 【換成你自己寫的一條，40 字以內】
+4. 【這一行選填；不寫就整行刪掉】
+
+## 邊界條件
+
+- APA 第七版未涵蓋的項目，說明無從判定，不得自行補一條規則
+
+## 完成條件
+
+- [ ] 三個面向都回報過，沒有略過任何一項
+- [ ] 每一個不符合的地方都附上「原文怎麼寫」與「該怎麼改」</code></pre>
+<h3 id="步驟-4-建-references-底下那一份">步驟 4　建 <code>references/</code> 底下那一份</h3>
+<p>同樣用純文字編輯器開新檔，貼上下面的內容，存進<strong>步驟 2 建的 <code>references/</code> 資料夾裡</strong>，檔名照下面標示的那一個。</p>
+<p>⚠ 這一份要放在 <code>references/</code> 裡面，<strong>不是跟 <code>SKILL.md</code> 並排</strong>。</p>
+<h4 id="情境-a簡報大綱生成-存成-referencespage-designmd">情境 A（簡報大綱生成）　存成 <code>references/page-design.md</code></h4>
+<pre class="markdown"><code># 頁面設計建議
+
+## 標題寫法
+
+標題直接寫結論，不要只寫主題詞（例：「延遲降低 40%」比「效能改善」好）。
+
+## 圖表配置
+
+- 每頁最多一張圖或一個表，避免視覺過載
+- 圖表要附一句話講「這張圖在說什麼」，不要讓讀者自己猜
+
+## 每頁的字量
+
+- 條列最多四項，每一項不超過兩行
+- 整段文字不放進投影片，要講的話寫在備忘稿裡</code></pre>
+<h4 id="情境-b文獻筆記整理-存成-referencesnote-formatmd">情境 B（文獻筆記整理）　存成 <code>references/note-format.md</code></h4>
+<pre class="markdown"><code># 四欄筆記的填寫細則
+
+- **研究問題**：抓作者自己說「本研究要回答什麼」的那一句，不要用摘要第一句代替
+- **方法**：資料來源與分析方式兩件事都要寫，例如「訪談 12 位教師，主題分析」
+- **發現**：只寫作者主張有證據支持的結果；作者自己標為推測的不算
+- **限制**：優先抄作者自己承認的限制。作者沒寫時才由讀者判斷，並註明「讀者判斷」
+
+## 引述原文時
+
+標出處到節名或頁數，例如（第 4.2 節）或（p. 118）。整段照抄要加引號。</code></pre>
+<h4 id="情境-c報告格式檢查-存成-referencesapa-basicsmd">情境 C（報告格式檢查）　存成 <code>references/apa-basics.md</code></h4>
+<pre class="markdown"><code># APA 第七版　三種常見條目格式
+
+- **期刊論文**：作者, A. A. (年). 文章標題. *期刊名, 卷*(期), 起頁–迄頁. https://doi.org/xxxx
+- **專書**：作者, A. A. (年). *書名* (版次). 出版社.
+- **網頁**：作者或機構. (年, 月 日). *標題*. 網站名. 取自網址
+
+## 最常見的三個錯誤
+
+- 期刊名與卷號要斜體，期號不斜體
+- 兩位作者之間用 `&amp;`，不是 `and`
+- 標題層級最多到第五級，第一級置中粗體、第二級靠左粗體</code></pre>
+<h3 id="步驟-5-把兩行佔位換成你自己寫的">步驟 5　把兩行佔位換成你自己寫的</h3>
+<p><code>## 執行原則</code> 底下有兩行長這樣：</p>
+<pre><code>3. 【換成你自己寫的一條，40 字以內】
+4. 【這一行選填；不寫就整行刪掉】</code></pre>
+<p>第 3 行必填，第 4 行選填。<strong>連那對方括號一起換掉</strong>，不要留著。</p>
+<h3 id="步驟-6-檢查然後截圖">步驟 6　檢查，然後截圖</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />資料夾結構跟步驟 2 的圖一樣</label></li>
+<li><label><input type="checkbox" /><code>SKILL.md</code> 的 S-K-I-L-L 都是大寫</label></li>
+<li><label><input type="checkbox" />references 那一份在 <code>references/</code> 裡面，不是跟 <code>SKILL.md</code> 並排</label></li>
+<li><label><input type="checkbox" />兩個檔案都不是 <code>.txt</code> 結尾</label></li>
+<li><label><input type="checkbox" /><code>SKILL.md</code> 的第 1 行與第 4 行都是三個<strong>半形</strong>連字號 <code>---</code></label></li>
+<li><label><input type="checkbox" />兩行佔位都處理過了（換掉，或把選填那行刪掉）</label></li>
+</ul>
+<p>檔案總管的畫面截圖，要看得到 <code>SKILL.md</code> 與 <code>references/</code> 兩個項目，貼進作答本第 2 題。</p>
+<h2 id="卡住的話">卡住的話</h2>
+<table>
+<thead>
+<tr>
+<th>症狀</th>
+<th>原因</th>
+<th>怎麼處理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>檔名變成 <code>SKILL.md.txt</code></td>
+<td>Windows 記事本預設加 <code>.txt</code></td>
+<td>存檔類型改「所有檔案」；或在檔案總管開啟副檔名顯示後改名。macOS 用「格式 → 製作純文字」</td>
+</tr>
+<tr>
+<td>notebook 第 3 格說找不到 <code>SKILL.md</code></td>
+<td>大小寫不對，或檔案放進了 <code>references/</code> 裡</td>
+<td>對照步驟 2 的結構圖</td>
+</tr>
+<tr>
+<td>notebook 第 3 格說 frontmatter 解析失敗</td>
+<td>第 1 行或第 4 行的 <code>---</code> 不對</td>
+<td>要三個<strong>半形</strong>連字號，不是全形破折號 <code>—</code></td>
+</tr>
+<tr>
+<td>notebook 第 3 格說佔位行還在</td>
+<td>步驟 5 漏做，或方括號沒刪掉</td>
+<td>連 <code>【</code> <code>】</code> 一起換掉</td>
+</tr>
+</tbody>
+</table>
+<h2 id="接下來">接下來</h2>
+<p>開 <code>HW4-starter.ipynb</code>，把這個資料夾搬上去。</p>
+
+<footer>HW4 操作說明　｜　本檔由 <code>產生說明.py</code> 自 <code>填答區.py</code>
+與 <code>範本/</code> 產生，請勿直接編輯。</footer>
+</div></body></html>
